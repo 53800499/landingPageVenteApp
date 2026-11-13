@@ -20,7 +20,7 @@ const Logo: React.FC = () => {
             ARIKE<span className="text-secondary">.</span>
           </span>
           <span className="text-[9px] sm:text-[10px] uppercase font-bold tracking-wider px-1.5 sm:px-2 py-0.5 rounded-full bg-secondary/20 text-secondary border border-secondary/30 leading-none">
-            v3.0
+            v1.0.1
           </span>
         </div>
         <span className="hidden min-[360px]:block text-[9px] sm:text-[10px] uppercase tracking-widest text-lightblue font-medium -mt-0.5 whitespace-nowrap">

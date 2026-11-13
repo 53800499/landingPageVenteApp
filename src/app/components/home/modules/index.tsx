@@ -425,7 +425,7 @@ const Modules = () => {
                     <div className='flex items-center justify-between'>
                       <div>
                         <p className='text-[10px] text-lightblue uppercase font-bold tracking-wider'>
-                          ARIKE Mobile v3.0
+                          ARIKE Mobile v1.0.1
                         </p>
                         <h4 className='text-sm font-black text-white truncate'>
                           {activeModule.mockup.screenTitle}

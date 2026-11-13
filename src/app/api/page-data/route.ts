@@ -172,7 +172,7 @@ const Faqdata: FaqType[] = [
   {
     heading: '6. L’application est-elle gratuite ?',
     subheading:
-      'ARIKE v3.0 offre un accès gratuit complet sans publicité pour démarrer et gérer votre boutique. Vous pouvez tester toutes les fonctionnalités clés immédiatement sans aucune carte bancaire.',
+      'ARIKE v1.0.1 offre un accès gratuit complet sans publicité pour démarrer et gérer votre boutique. Vous pouvez tester toutes les fonctionnalités clés immédiatement sans aucune carte bancaire.',
   },
 ]
 

@@ -65,22 +65,32 @@ const Banner = () => {
             </div>
 
             {/* Action buttons */}
-            <div className='flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4'>
-              <Link
-                href='#download-section'
-                className='w-full sm:w-auto flex items-center justify-center gap-3 text-base sm:text-lg font-bold text-white py-4 px-8 bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary rounded-2xl shadow-xl shadow-primary/25 duration-300 transform hover:-translate-y-0.5 group'>
-                <Icon icon='solar:download-square-bold' className='text-2xl group-hover:scale-110 transition-transform' />
+            <div className='flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5'>
+              <a
+                href='/download'
+                className='w-full sm:w-auto flex items-center justify-center gap-3 text-base sm:text-lg font-bold text-white py-3.5 px-6 bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary rounded-2xl shadow-xl shadow-primary/25 duration-300 transform hover:-translate-y-0.5 group cursor-pointer'>
+                <Icon icon='solar:smartphone-bold' className='text-2xl text-secondary group-hover:scale-110 transition-transform' />
                 <div className='text-left leading-tight'>
-                  <span>Télécharger l&apos;APK Android</span>
-                  <span className='block text-[11px] font-normal text-white/80'>v3.0.0 • APK Universel (100% compatible) • Gratuit</span>
+                  <span>APK Android</span>
+                  <span className='block text-[11px] font-normal text-white/80'>v1.0.1 • Téléchargement direct</span>
                 </div>
-              </Link>
+              </a>
+
+              <a
+                href='/download/windows'
+                className='w-full sm:w-auto flex items-center justify-center gap-3 text-base sm:text-lg font-bold text-white py-3.5 px-6 rounded-2xl border border-secondary/40 bg-darkmode hover:border-secondary hover:bg-body-bg transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer shadow-lg'>
+                <Icon icon='solar:laptop-bold' className='text-2xl text-secondary group-hover:scale-110 transition-transform' />
+                <div className='text-left leading-tight'>
+                  <span>Logiciel PC Windows</span>
+                  <span className='block text-[11px] font-normal text-lightblue'>v1.0.1 • Installeur .EXE</span>
+                </div>
+              </a>
 
               <Link
-                href='#demo-section'
-                className='w-full sm:w-auto flex items-center justify-center gap-2 text-base font-semibold text-white py-4 px-6 rounded-2xl border border-border bg-darkmode hover:border-primary hover:bg-body-bg transition-all duration-300'>
-                <Icon icon='solar:play-circle-bold' className='text-2xl text-secondary' />
-                <span>Tester le Simulateur Caisse</span>
+                href='#download-section'
+                className='w-full sm:w-auto flex items-center justify-center gap-2 text-sm font-semibold text-white/80 hover:text-white py-3.5 px-4 rounded-2xl hover:bg-white/5 transition-all'>
+                <Icon icon='solar:info-circle-bold' className='text-xl text-secondary' />
+                <span>Guide & Specs</span>
               </Link>
             </div>
           </div>

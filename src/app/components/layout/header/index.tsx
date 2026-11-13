@@ -83,20 +83,20 @@ const Header: React.FC = () => {
           {/* Header Action Buttons */}
           <div className='flex items-center gap-2.5 sm:gap-3 shrink-0'>
             {/* Mobile quick-action download pill (<640px) */}
-            <Link
-              href='#download-section'
+            <a
+              href='/download'
               className='flex sm:hidden items-center gap-1.5 bg-primary/25 border border-primary/50 hover:bg-primary/40 text-secondary font-bold text-xs px-3 py-2 rounded-xl transition-colors'>
               <Icon icon='solar:download-square-bold' className='text-base' />
               <span>APK</span>
-            </Link>
+            </a>
 
             {/* Desktop & Tablet Full Download CTA (>=640px) */}
-            <Link
+            <a
               href='#download-section'
               className='hidden sm:flex items-center gap-2 bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-semibold duration-300 px-4 xl:px-5 py-2.5 rounded-xl shadow-lg shadow-primary/20 text-xs xl:text-sm group'>
               <Icon icon='solar:download-square-bold' className='text-lg xl:text-xl group-hover:translate-y-0.5 transition-transform' />
-              <span>Télécharger l&apos;APK</span>
-            </Link>
+              <span>Télécharger (Mobile & PC)</span>
+            </a>
 
             {/* Burger toggle for mobile & tablet (<1024px) */}
             <button
@@ -151,22 +151,31 @@ const Header: React.FC = () => {
 
         {/* Drawer Bottom Actions & Contacts */}
         <div className='p-4 sm:p-5 border-t border-border bg-[#0A261D]/90 space-y-3 shrink-0'>
-          <Link
-            href='#download-section'
-            onClick={() => setNavbarOpen(false)}
-            className='w-full flex items-center justify-center gap-2 bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold py-3 px-4 rounded-xl shadow-lg shadow-primary/20 text-sm transition-all'>
-            <Icon icon='solar:download-square-bold' className='text-xl' />
-            <span>Télécharger ARIKE APK (v3.0)</span>
-          </Link>
+          <div className='flex flex-col gap-2'>
+            <a
+              href='/download'
+              onClick={() => setNavbarOpen(false)}
+              className='w-full flex items-center justify-center gap-2 bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold py-2.5 px-4 rounded-xl shadow-lg shadow-primary/20 text-xs sm:text-sm transition-all'>
+              <Icon icon='solar:smartphone-bold' className='text-lg' />
+              <span>Télécharger pour Android (APK)</span>
+            </a>
+            <a
+              href='/download/windows'
+              onClick={() => setNavbarOpen(false)}
+              className='w-full flex items-center justify-center gap-2 bg-darkmode border border-secondary/40 text-white font-semibold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition-all'>
+              <Icon icon='solar:laptop-bold' className='text-lg text-secondary' />
+              <span>Télécharger pour PC Windows (.EXE)</span>
+            </a>
+          </div>
 
           <a
-            href='https://wa.me/22990000000?text=Bonjour,%20je%20souhaite%20d%C3%A9couvrir%20ARIKE'
+            href='https://wa.me/229015380499?text=Bonjour,%20je%20souhaite%20d%C3%A9couvrir%20ARIKE'
             target='_blank'
             rel='noopener noreferrer'
             onClick={() => setNavbarOpen(false)}
             className='w-full flex items-center justify-center gap-2 bg-darkmode border border-border hover:border-secondary text-white font-semibold py-2.5 px-4 rounded-xl text-xs transition-colors'>
             <Icon icon='logos:whatsapp-icon' className='text-base' />
-            <span>Assistance WhatsApp Directe</span>
+            <span>Assistance WhatsApp Directe (+229 01 53 80 49 9)</span>
           </a>
 
           <p className='text-[10px] text-center text-lightblue/80 pt-1'>

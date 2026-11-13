@@ -5,6 +5,7 @@ import Work from "./components/home/work";
 import Table from "./components/home/table";
 import Modules from "./components/home/modules";
 import Features from "./components/home/features";
+import Pricing from "./components/home/pricing";
 import Simple from "./components/home/simple";
 import Trade from "./components/home/trade";
 import Faq from "./components/home/faq";
@@ -25,6 +26,8 @@ export const metadata: Metadata = {
     'Mobile Money',
     'Recouvrement dette WhatsApp',
     'Stock boutique',
+    'Tarifs caisse enregistreuse',
+    'Abonnement ARIKE',
   ],
   icons: {
     icon: '/images/logo/app_icon.png',
@@ -40,6 +43,7 @@ export default function Home() {
       <Table />
       <Modules />
       <Features />
+      <Pricing />
       <Simple />
       <Trade />
       <Faq />

@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server'
 
+export const dynamic = 'force-dynamic'
+
 import { HeaderItem } from '@/app/types/menu'
 import { SocialType } from '@/app/types/sociallink'
 import { FooterType } from '@/app/types/footerlink'
@@ -34,6 +36,13 @@ const Headerdata: HeaderItem[] = [
         icon: 'solar:star-fall-minimalistic-2-bold',
       },
       {
+        label: 'Tarifs & Abonnements',
+        href: '/#pricing-section',
+        description: 'Formules SaaS & Packs caisse matériel',
+        icon: 'solar:tag-price-bold',
+        badge: '0 F à vie',
+      },
+      {
         label: 'Comment ça marche',
         href: '/#work-section',
         description: 'Installation & prise en main en 3 étapes',
@@ -41,6 +50,7 @@ const Headerdata: HeaderItem[] = [
       },
     ],
   },
+  { label: 'Tarifs & Abonnements', href: '/#pricing-section' },
   { label: 'Téléchargement', href: '/#download-section' },
   { label: 'FAQ', href: '/#faq-section' },
   { label: 'Contact', href: '/#contact' },
@@ -167,7 +177,7 @@ const Faqdata: FaqType[] = [
 ]
 
 const Sociallinkdata: SocialType[] = [
-  { imgsrc: '/images/footer/insta.svg', href: 'https://wa.me/22990000000' },
+  { imgsrc: '/images/footer/insta.svg', href: 'https://wa.me/229015380499' },
   { imgsrc: '/images/footer/dribble.svg', href: 'https://facebook.com/' },
   { imgsrc: '/images/footer/twitter.svg', href: 'https://linkedin.com/' },
   { imgsrc: '/images/footer/youtube.svg', href: 'https://youtube.com/' },
@@ -178,6 +188,7 @@ const Footerlinkdata: FooterType[] = [
   { label: 'Les 14 Modules Métiers', href: '/#modules-section' },
   { label: 'Simulateur Caisse', href: '/#demo-section' },
   { label: 'Fonctionnalités Clés', href: '/#features-section' },
+  { label: 'Tarifs & Abonnements', href: '/#pricing-section' },
   { label: 'Téléchargement Direct', href: '/#download-section' },
   { label: 'FAQ Commerçants', href: '/#faq-section' },
   { label: 'Contact & Support WhatsApp', href: '/#contact' },

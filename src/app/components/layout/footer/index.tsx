@@ -42,7 +42,7 @@ const Footer = () => {
             </p>
             <div className='flex items-center gap-3'>
               <a
-                href='https://wa.me/22990000000'
+                href='https://wa.me/229015380499'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='size-9 rounded-xl bg-darkmode border border-border flex items-center justify-center text-secondary hover:border-primary transition-colors'>
@@ -92,18 +92,18 @@ const Footer = () => {
             </p>
             <div className='space-y-3.5 text-sm text-lightblue'>
               <a
-                href='tel:+22997000000'
+                href='tel:+229015380499'
                 className='hover:text-secondary flex items-center gap-2.5 transition-colors'>
                 <Icon icon='solar:phone-calling-bold' className='text-secondary text-lg shrink-0' />
-                <span>+229 53 80 04 99 / 90 00 00 00</span>
+                <span>+229 01 53 80 49 9</span>
               </a>
               <a
-                href='https://wa.me/22990000000'
+                href='https://wa.me/229015380499'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='hover:text-secondary flex items-center gap-2.5 transition-colors'>
                 <Icon icon='logos:whatsapp-icon' className='text-lg shrink-0' />
-                <span>Assistance WhatsApp directe</span>
+                <span>Assistance WhatsApp directe (+229 01 53 80 49 9)</span>
               </a>
               <a
                 href='mailto:bassirousikirou59@gmail.com'

@@ -58,7 +58,7 @@ const ContactForm = () => {
       `📍 *Ville / Marché :* ${formData.location || 'Bénin'}\n\n` +
       `💬 *Message :* ${formData.message || subject}`
     )
-    window.open(`https://wa.me/22997000000?text=${waText}`, '_blank')
+    window.open(`https://wa.me/229015380499?text=${waText}`, '_blank')
 
     setTimeout(() => {
       setLoader(false)
@@ -120,12 +120,12 @@ const ContactForm = () => {
               </p>
 
               <a
-                href='https://wa.me/22997000000?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20l%27application%20ARIKE'
+                href='https://wa.me/229015380499?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20l%27application%20ARIKE'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='w-full inline-flex items-center justify-center gap-2.5 py-3.5 px-6 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm shadow-lg shadow-emerald-900/40 transition-all transform hover:-translate-y-0.5 cursor-pointer'>
                 <Icon icon='logos:whatsapp-icon' className='text-xl' />
-                <span>Ouvrir WhatsApp (+229 53 80 04 99)</span>
+                <span>Ouvrir WhatsApp (+229 01 53 80 49 9)</span>
               </a>
             </div>
 
@@ -143,8 +143,8 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <p className='text-xs text-white/60 uppercase font-semibold'>Appels & Urgences</p>
-                    <a href='tel:+22997000000' className='text-white font-bold hover:text-secondary transition-colors'>
-                      +229 53 80 04 99 / 90 00 00 00
+                    <a href='tel:+229015380499' className='text-white font-bold hover:text-secondary transition-colors'>
+                      +229 01 53 80 49 9
                     </a>
                   </div>
                 </div>

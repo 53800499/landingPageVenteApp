@@ -81,12 +81,12 @@ const Faq = () => {
                   Notre équipe d&apos;assistance locale à Cotonou est disponible du lundi au samedi pour vous guider par WhatsApp ou par appel.
                 </p>
                 <a
-                  href='https://wa.me/22990000000?text=Bonjour,%20j%27ai%20une%20question%20sur%20ARIKE'
+                  href='https://wa.me/229015380499?text=Bonjour,%20j%27ai%20une%20question%20sur%20ARIKE'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold py-3 px-6 rounded-xl shadow-lg shadow-primary/20 text-sm'>
                   <Icon icon='logos:whatsapp-icon' className='text-lg' />
-                  <span>Discuter avec un Conseiller</span>
+                  <span>Discuter avec un Conseiller (+229 01 53 80 49 9)</span>
                 </a>
               </div>
             </div>

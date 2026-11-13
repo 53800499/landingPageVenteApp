@@ -25,13 +25,13 @@ const Trade = () => {
         <div className='text-center max-w-3xl mx-auto mb-16'>
           <div className='inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/15 border border-secondary/30 text-secondary text-xs font-bold uppercase tracking-wider mb-4'>
             <Icon icon='solar:download-square-bold' className='text-base' />
-            <span>Téléchargement Direct</span>
+            <span>Téléchargement Direct Mobile & PC</span>
           </div>
           <h2 className='text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4'>
-            Installez <span className='text-transparent bg-clip-text bg-linear-to-r from-secondary to-gold-soft'>ARIKE</span> Facilement sur votre Téléphone
+            Installez <span className='text-transparent bg-clip-text bg-linear-to-r from-secondary to-gold-soft'>ARIKE</span> sur Téléphone & Ordinateur
           </h2>
           <p className='text-lightpurple text-base sm:text-lg leading-relaxed'>
-            Téléchargez le fichier APK officiel, installez-le en 1 clic et profitez de l&apos;intégralité de vos fonctionnalités sans frais ni abonnement caché.
+            Disponible pour smartphone Android (APK universel 100% compatible) et pour PC Windows (logiciel de caisse et back-office hors-ligne).
           </p>
         </div>
 
@@ -53,7 +53,7 @@ const Trade = () => {
                 </div>
                 <div>
                   <div className='flex items-center gap-2'>
-                    <h3 className='text-2xl font-black text-white'>ARIKE Mobile v3.0</h3>
+                    <h3 className='text-2xl font-black text-white'>ARIKE Mobile v1.0.1</h3>
                     <span className='px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold'>
                       Officiel
                     </span>
@@ -89,22 +89,50 @@ const Trade = () => {
 
               {/* Download Buttons */}
               <div className='space-y-3 pt-2'>
-                <a
-                  href='/download'
-                  onClick={handleDownload}
-                  className='w-full sm:w-auto inline-flex items-center justify-center gap-3 py-4 px-8 rounded-2xl bg-linear-to-r from-primary via-emerald-600 to-secondary hover:from-secondary hover:to-primary text-white font-extrabold text-base sm:text-lg shadow-xl shadow-primary/30 transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer'>
-                  <Icon icon='solar:download-square-bold' className='text-3xl animate-bounce' style={{ animationDuration: '2s' }} />
-                  <div className='text-left'>
-                    <span>Télécharger ARIKE pour Android</span>
-                    <span className='block text-[11px] font-normal text-white/80'>APK Universel • Tout smartphone • Gratuit</span>
+                <div className='flex flex-col sm:flex-row gap-3'>
+                  <a
+                    href='/download'
+                    download
+                    onClick={handleDownload}
+                    className='flex-1 inline-flex items-center justify-center gap-3 py-4 px-6 rounded-2xl bg-linear-to-r from-primary via-emerald-600 to-secondary hover:from-secondary hover:to-primary text-white font-extrabold text-base sm:text-lg shadow-xl shadow-primary/30 transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer'>
+                    <Icon icon='solar:download-square-bold' className='text-3xl animate-bounce' style={{ animationDuration: '2s' }} />
+                    <div className='text-left'>
+                      <span>Télécharger ARIKE APK</span>
+                      <span className='block text-[11px] font-normal text-white/80'>v1.0.1 • Tout smartphone Android • Gratuit</span>
+                    </div>
+                  </a>
+
+                  <a
+                    href='/download?platform=windows'
+                    className='inline-flex items-center justify-center gap-2 py-3 px-5 rounded-2xl bg-body-bg/90 border border-border hover:border-secondary text-white font-semibold text-xs sm:text-sm transition-all hover:bg-darkmode'>
+                    <Icon icon='solar:laptop-bold' className='text-xl text-secondary' />
+                    <span>PC Windows (.exe)</span>
+                  </a>
+                </div>
+
+                {/* Direct Link Pills */}
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1'>
+                  <div className='flex items-center gap-2 px-3 py-1.5 rounded-xl bg-body-bg/80 border border-border/70 text-xs'>
+                    <Icon icon='solar:smartphone-bold' className='text-secondary text-sm shrink-0' />
+                    <span className='text-lightblue text-[11px]'>Android :</span>
+                    <a href='/download' className='font-mono text-white hover:text-secondary underline font-semibold select-all'>
+                      /download
+                    </a>
                   </div>
-                </a>
+                  <div className='flex items-center gap-2 px-3 py-1.5 rounded-xl bg-body-bg/80 border border-border/70 text-xs'>
+                    <Icon icon='solar:laptop-bold' className='text-secondary text-sm shrink-0' />
+                    <span className='text-lightblue text-[11px]'>Windows :</span>
+                    <a href='/download/windows' className='font-mono text-white hover:text-secondary underline font-semibold select-all'>
+                      /download/windows
+                    </a>
+                  </div>
+                </div>
 
                 {downloadStarted && (
                   <div className='p-3 rounded-xl bg-primary/20 border border-secondary/40 text-xs text-white flex items-center gap-2.5 animate-fadeIn shadow-lg shadow-primary/10'>
                     <Icon icon='solar:check-circle-bold' className='text-lg text-secondary shrink-0' />
                     <span className='flex-1 leading-snug'>
-                      Le téléchargement de l&apos;APK a démarré ! Appuyez sur le fichier dans vos notifications pour l&apos;installer.
+                      Le téléchargement a démarré ! Appuyez sur le fichier téléchargé pour l&apos;installer.
                     </span>
                     <button
                       type='button'
@@ -118,17 +146,32 @@ const Trade = () => {
                 )}
               </div>
 
-              {/* 3 Step Installation Notice */}
-              <div className='mt-3 p-4 rounded-2xl bg-body-bg/60 border border-border/80'>
-                <p className='text-xs font-bold text-white mb-2 flex items-center gap-1.5'>
+              {/* Step Installation Notice */}
+              <div className='mt-3 p-4 rounded-2xl bg-body-bg/60 border border-border/80 space-y-2.5'>
+                <p className='text-xs font-bold text-white flex items-center gap-1.5'>
                   <Icon icon='solar:info-circle-bold' className='text-secondary' />
-                  <span>Installation rapide en 3 étapes (sans Play Store) :</span>
+                  <span>Guide d&apos;installation rapide :</span>
                 </p>
-                <ol className='text-xs text-lightblue space-y-1.5 list-decimal list-inside'>
-                  <li>Appuyez sur <strong>Télécharger ARIKE</strong> ci-dessus.</li>
-                  <li>Ouvrez le fichier téléchargé. Si Android demande l&apos;autorisation, cochez <em>« Autoriser cette source »</em>.</li>
-                  <li>Appuyez sur <strong>Installer</strong>. Les prochaines mises à jour arriveront automatiquement sans réinstallation !</li>
-                </ol>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-lightblue'>
+                  <div className='p-2.5 rounded-xl bg-darkmode/70 border border-border/60'>
+                    <p className='font-bold text-white mb-1 flex items-center gap-1.5'>
+                      <Icon icon='solar:smartphone-bold' className='text-secondary' />
+                      <span>Smartphone Android :</span>
+                    </p>
+                    <p className='text-[11px] leading-relaxed'>
+                      Ouvrez le fichier APK téléchargé. Si Android demande l&apos;autorisation, cochez <em>« Autoriser cette source »</em> puis cliquez sur <strong>Installer</strong>.
+                    </p>
+                  </div>
+                  <div className='p-2.5 rounded-xl bg-darkmode/70 border border-border/60'>
+                    <p className='font-bold text-white mb-1 flex items-center gap-1.5'>
+                      <Icon icon='solar:laptop-bold' className='text-secondary' />
+                      <span>Ordinateur Windows :</span>
+                    </p>
+                    <p className='text-[11px] leading-relaxed'>
+                      Double-cliquez sur le fichier d&apos;installation <code>.exe</code>. L&apos;application se lance et crée un raccourci ARIKE direct sur votre bureau.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 

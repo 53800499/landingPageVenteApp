@@ -23,12 +23,8 @@ export async function GET(request: Request) {
 
   // 1. Pour Windows
   if (platform === 'windows') {
-    const windowsUrl =
-      process.env.WINDOWS_DOWNLOAD_URL ||
-      process.env.NEXT_PUBLIC_WINDOWS_DOWNLOAD_URL ||
-      DEFAULT_WINDOWS_EXE_URL
-
-    return NextResponse.redirect(windowsUrl.trim(), {
+    const windowsRedirect = new URL('/download/windows', request.url)
+    return NextResponse.redirect(windowsRedirect, {
       status: 307,
       headers: {
         'Cache-Control': 'no-cache, no-store, must-revalidate',
@@ -44,7 +40,10 @@ export async function GET(request: Request) {
     process.env.APK_DOWNLOAD_URL || process.env.NEXT_PUBLIC_APK_DOWNLOAD_URL
 
   if (customUrl && customUrl.trim().length > 0) {
-    return NextResponse.redirect(customUrl.trim(), {
+    const targetUrl = customUrl.startsWith('http')
+      ? customUrl.trim()
+      : new URL(customUrl.trim(), request.url).toString()
+    return NextResponse.redirect(targetUrl, {
       status: 307,
       headers: {
         'Cache-Control': 'no-cache, no-store, must-revalidate',

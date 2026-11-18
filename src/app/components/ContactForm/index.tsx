@@ -125,7 +125,7 @@ const ContactForm = () => {
                 rel='noopener noreferrer'
                 className='w-full inline-flex items-center justify-center gap-2.5 py-3.5 px-6 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm shadow-lg shadow-emerald-900/40 transition-all transform hover:-translate-y-0.5 cursor-pointer'>
                 <Icon icon='logos:whatsapp-icon' className='text-xl' />
-                <span>Ouvrir WhatsApp (+229 01 53 80 49 9)</span>
+                <span>Ouvrir WhatsApp (+229 01 53 80 04 99)</span>
               </a>
             </div>
 
@@ -144,7 +144,7 @@ const ContactForm = () => {
                   <div>
                     <p className='text-xs text-white/60 uppercase font-semibold'>Appels & Urgences</p>
                     <a href='tel:+2290153800499' className='text-white font-bold hover:text-secondary transition-colors'>
-                      +229 01 53 80 49 9
+                      +229 01 53 80 04 99
                     </a>
                   </div>
                 </div>

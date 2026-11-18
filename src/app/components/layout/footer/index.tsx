@@ -95,7 +95,7 @@ const Footer = () => {
                 href='tel:+2290153800499'
                 className='hover:text-secondary flex items-center gap-2.5 transition-colors'>
                 <Icon icon='solar:phone-calling-bold' className='text-secondary text-lg shrink-0' />
-                <span>+229 01 53 80 49 9</span>
+                <span>+229 01 53 80 04 99</span>
               </a>
               <a
                 href='https://wa.me/2290153800499'
@@ -103,7 +103,7 @@ const Footer = () => {
                 rel='noopener noreferrer'
                 className='hover:text-secondary flex items-center gap-2.5 transition-colors'>
                 <Icon icon='logos:whatsapp-icon' className='text-lg shrink-0' />
-                <span>Assistance WhatsApp directe (+229 01 53 80 49 9)</span>
+                <span>Assistance WhatsApp directe (+229 01 53 80 04 99)</span>
               </a>
               <a
                 href='mailto:bassirousikirou59@gmail.com'

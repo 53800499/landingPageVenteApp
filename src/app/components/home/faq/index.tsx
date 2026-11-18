@@ -85,7 +85,7 @@ const Faq = () => {
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold py-3 px-6 rounded-xl shadow-lg shadow-primary/20 text-sm'>
                   <Icon icon='logos:whatsapp-icon' className='text-lg' />
-                  <span>Discuter avec un Conseiller (+229 01 53 80 49 9)</span>
+                  <span>Discuter avec un Conseiller (+229 01 53 80 04 99)</span>
                 </a>
               </div>
             </div>

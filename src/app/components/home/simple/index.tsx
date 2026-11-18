@@ -31,7 +31,7 @@ const Simple = () => {
             rel='noopener noreferrer'
             className='w-full sm:w-auto flex items-center justify-center gap-2 text-base font-semibold text-white py-4 px-8 rounded-2xl border border-border bg-darkmode hover:border-secondary hover:text-secondary transition-all duration-300'>
             <Icon icon='logos:whatsapp-icon' className='text-xl' />
-            <span>Échanger sur WhatsApp (+229 01 53 80 49 9)</span>
+            <span>Échanger sur WhatsApp (+229 01 53 80 04 99)</span>
           </Link>
         </div>
       </div>

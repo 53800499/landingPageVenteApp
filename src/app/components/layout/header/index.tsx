@@ -66,8 +66,8 @@ const Header: React.FC = () => {
     <>
       <header
         className={`fixed top-0 z-40 w-full transition-all duration-300 ${sticky
-            ? 'shadow-xl bg-[#061B14]/95 backdrop-blur-md border-b border-border/80 py-3'
-            : 'shadow-none py-4 sm:py-5'
+          ? 'shadow-xl bg-[#061B14]/95 backdrop-blur-md border-b border-border/80 py-3'
+          : 'shadow-none py-4 sm:py-5'
           }`}>
         <div className='container flex items-center justify-between gap-3'>
           <Logo />
@@ -173,7 +173,7 @@ const Header: React.FC = () => {
             onClick={() => setNavbarOpen(false)}
             className='w-full flex items-center justify-center gap-2 bg-darkmode border border-border hover:border-secondary text-white font-semibold py-2.5 px-4 rounded-xl text-xs transition-colors'>
             <Icon icon='logos:whatsapp-icon' className='text-base' />
-            <span>Assistance WhatsApp Directe (+229 01 53 80 49 9)</span>
+            <span>Assistance WhatsApp Directe (+229 01 53 80 04 99)</span>
           </a>
 
           <p className='text-[10px] text-center text-lightblue/80 pt-1'>

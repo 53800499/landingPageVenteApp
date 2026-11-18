@@ -17,7 +17,7 @@ type PaymentOption = 'TRIAL' | 'MOMO' | 'WHATSAPP' | 'FREE'
 type MobileMoneyProvider = 'MTN' | 'MOOV' | 'CELTIIS' | 'CARD'
 
 export const OFFICIAL_PHONE = '2290153800499'
-export const OFFICIAL_PHONE_DISPLAY = '+229 01 53 80 49 9'
+export const OFFICIAL_PHONE_DISPLAY = '+229 01 53 80 04 99'
 
 export default function SubscriptionCheckoutModal({
   isOpen,
@@ -373,8 +373,8 @@ export default function SubscriptionCheckoutModal({
                           else if (paymentOption === 'FREE') setPaymentOption('TRIAL')
                         }}
                         className={`p-2.5 sm:p-3 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between ${isSelected
-                            ? 'bg-secondary/20 border-secondary shadow-lg shadow-secondary/15 scale-[1.02]'
-                            : 'bg-body-bg/60 border-border/80 hover:border-primary/50 text-lightblue'
+                          ? 'bg-secondary/20 border-secondary shadow-lg shadow-secondary/15 scale-[1.02]'
+                          : 'bg-body-bg/60 border-border/80 hover:border-primary/50 text-lightblue'
                           }`}>
                         <div className='flex items-center justify-between'>
                           <span className={`text-xs font-extrabold truncate ${isSelected ? 'text-white' : 'text-lightblue'}`}>
@@ -474,8 +474,8 @@ export default function SubscriptionCheckoutModal({
                     {/* Option A: Essai 14j */}
                     <label
                       className={`flex items-start gap-3 p-3.5 rounded-2xl border cursor-pointer transition-all ${paymentOption === 'TRIAL'
-                          ? 'bg-primary/20 border-primary shadow-md'
-                          : 'bg-body-bg/60 border-border/70 hover:border-border'
+                        ? 'bg-primary/20 border-primary shadow-md'
+                        : 'bg-body-bg/60 border-border/70 hover:border-border'
                         }`}>
                       <input
                         type='radio'
@@ -500,8 +500,8 @@ export default function SubscriptionCheckoutModal({
                     {/* Option B: Mobile Money (FedaPay) */}
                     <label
                       className={`flex items-start gap-3 p-3.5 rounded-2xl border cursor-pointer transition-all ${paymentOption === 'MOMO'
-                          ? 'bg-secondary/20 border-secondary shadow-md'
-                          : 'bg-body-bg/60 border-border/70 hover:border-border'
+                        ? 'bg-secondary/20 border-secondary shadow-md'
+                        : 'bg-body-bg/60 border-border/70 hover:border-border'
                         }`}>
                       <input
                         type='radio'
@@ -530,8 +530,8 @@ export default function SubscriptionCheckoutModal({
                                 type='button'
                                 onClick={() => setMomoProvider(prov)}
                                 className={`py-2 px-1 rounded-xl text-xs font-bold border transition-all text-center ${momoProvider === prov
-                                    ? 'bg-secondary text-[#061B14] border-secondary'
-                                    : 'bg-tablebg text-lightblue border-border hover:text-white'
+                                  ? 'bg-secondary text-[#061B14] border-secondary'
+                                  : 'bg-tablebg text-lightblue border-border hover:text-white'
                                   }`}>
                                 {prov === 'CARD' ? 'Carte CB' : prov}
                               </button>
@@ -544,8 +544,8 @@ export default function SubscriptionCheckoutModal({
                     {/* Option C: WhatsApp Assisted */}
                     <label
                       className={`flex items-start gap-3 p-3.5 rounded-2xl border cursor-pointer transition-all ${paymentOption === 'WHATSAPP'
-                          ? 'bg-tablebg border-secondary/60'
-                          : 'bg-body-bg/60 border-border/70 hover:border-border'
+                        ? 'bg-tablebg border-secondary/60'
+                        : 'bg-body-bg/60 border-border/70 hover:border-border'
                         }`}>
                       <input
                         type='radio'

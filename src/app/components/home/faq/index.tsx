@@ -56,9 +56,8 @@ const Faq = () => {
                             <span>{items.heading}</span>
                             <Icon
                               icon='solar:alt-arrow-down-bold'
-                              className={`${
-                                open ? 'rotate-180 text-secondary' : 'text-lightblue'
-                              } text-xl transition-transform shrink-0`}
+                              className={`${open ? 'rotate-180 text-secondary' : 'text-lightblue'
+                                } text-xl transition-transform shrink-0`}
                             />
                           </DisclosureButton>
                           <DisclosurePanel className='pt-3 text-sm sm:text-base text-lightblue font-normal leading-relaxed border-t border-border/60 mt-3'>
@@ -81,7 +80,7 @@ const Faq = () => {
                   Notre équipe d&apos;assistance locale à Cotonou est disponible du lundi au samedi pour vous guider par WhatsApp ou par appel.
                 </p>
                 <a
-                  href='https://wa.me/229015380499?text=Bonjour,%20j%27ai%20une%20question%20sur%20ARIKE'
+                  href='https://wa.me/2290153800499?text=Bonjour,%20j%27ai%20une%20question%20sur%20ARIKE'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold py-3 px-6 rounded-xl shadow-lg shadow-primary/20 text-sm'>

@@ -65,11 +65,10 @@ const Header: React.FC = () => {
   return (
     <>
       <header
-        className={`fixed top-0 z-40 w-full transition-all duration-300 ${
-          sticky
+        className={`fixed top-0 z-40 w-full transition-all duration-300 ${sticky
             ? 'shadow-xl bg-[#061B14]/95 backdrop-blur-md border-b border-border/80 py-3'
             : 'shadow-none py-4 sm:py-5'
-        }`}>
+          }`}>
         <div className='container flex items-center justify-between gap-3'>
           <Logo />
 
@@ -120,10 +119,9 @@ const Header: React.FC = () => {
       {/* High-Opacity Solid Mobile Navigation Drawer (Spans full 100dvh height, scrollable) */}
       <div
         ref={mobileMenuRef}
-        className={`lg:hidden fixed top-0 right-0 h-screen h-dvh w-full max-w-xs sm:max-w-sm bg-[#061B14] border-l border-border shadow-2xl transform transition-transform duration-300 ease-in-out ${
-          navbarOpen ? 'translate-x-0' : 'translate-x-full'
-        } z-60 flex flex-col justify-between overflow-y-auto`}>
-        
+        className={`lg:hidden fixed top-0 right-0 h-screen h-dvh w-full max-w-xs sm:max-w-sm bg-[#061B14] border-l border-border shadow-2xl transform transition-transform duration-300 ease-in-out ${navbarOpen ? 'translate-x-0' : 'translate-x-full'
+          } z-60 flex flex-col justify-between overflow-y-auto`}>
+
         <div>
           {/* Mobile Drawer Top Bar */}
           <div className='flex items-center justify-between p-4 sm:p-5 border-b border-border bg-[#0A261D] shrink-0'>
@@ -169,7 +167,7 @@ const Header: React.FC = () => {
           </div>
 
           <a
-            href='https://wa.me/229015380499?text=Bonjour,%20je%20souhaite%20d%C3%A9couvrir%20ARIKE'
+            href='https://wa.me/2290153800499?text=Bonjour,%20je%20souhaite%20d%C3%A9couvrir%20ARIKE'
             target='_blank'
             rel='noopener noreferrer'
             onClick={() => setNavbarOpen(false)}

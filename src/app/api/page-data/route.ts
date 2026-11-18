@@ -168,7 +168,7 @@ const Faqdata: FaqType[] = [
 ]
 
 const Sociallinkdata: SocialType[] = [
-  { imgsrc: '/images/footer/insta.svg', href: 'https://wa.me/229015380499' },
+  { imgsrc: '/images/footer/insta.svg', href: 'https://wa.me/2290153800499' },
   { imgsrc: '/images/footer/dribble.svg', href: 'https://facebook.com/' },
   { imgsrc: '/images/footer/twitter.svg', href: 'https://linkedin.com/' },
   { imgsrc: '/images/footer/youtube.svg', href: 'https://youtube.com/' },

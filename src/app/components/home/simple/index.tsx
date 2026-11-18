@@ -26,7 +26,7 @@ const Simple = () => {
           </Link>
 
           <Link
-            href='https://wa.me/229015380499?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20ARIKE'
+            href='https://wa.me/2290153800499?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20ARIKE'
             target='_blank'
             rel='noopener noreferrer'
             className='w-full sm:w-auto flex items-center justify-center gap-2 text-base font-semibold text-white py-4 px-8 rounded-2xl border border-border bg-darkmode hover:border-secondary hover:text-secondary transition-all duration-300'>

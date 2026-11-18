@@ -52,7 +52,7 @@ export async function POST(request: Request) {
     }
 
     // Formatage propre du message d'assistance WhatsApp vers le numéro officiel
-    const officialPhone = '229015380499'
+    const officialPhone = '2290153800499'
     const waText = encodeURIComponent(
       `*Demande de Souscription ARIKE*\n` +
       `🔖 *Référence :* ${reference}\n` +
@@ -85,8 +85,8 @@ export async function POST(request: Request) {
         body.planCode === 'FREE'
           ? 'Votre accès gratuit et autonome à vie est prêt !'
           : body.paymentMethod === 'TRIAL_14D'
-          ? 'Votre essai gratuit de 14 jours a été activé avec succès !'
-          : 'Demande de paiement enregistrée avec succès.',
+            ? 'Votre essai gratuit de 14 jours a été activé avec succès !'
+            : 'Demande de paiement enregistrée avec succès.',
     })
   } catch (error) {
     console.error('Erreur API subscribe:', error)

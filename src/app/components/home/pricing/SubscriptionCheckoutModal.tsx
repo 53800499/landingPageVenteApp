@@ -16,7 +16,7 @@ interface SubscriptionCheckoutModalProps {
 type PaymentOption = 'TRIAL' | 'MOMO' | 'WHATSAPP' | 'FREE'
 type MobileMoneyProvider = 'MTN' | 'MOOV' | 'CELTIIS' | 'CARD'
 
-export const OFFICIAL_PHONE = '229015380499'
+export const OFFICIAL_PHONE = '2290153800499'
 export const OFFICIAL_PHONE_DISPLAY = '+229 01 53 80 49 9'
 
 export default function SubscriptionCheckoutModal({
@@ -211,7 +211,7 @@ export default function SubscriptionCheckoutModal({
 
       {/* Modal Container */}
       <div className='relative z-10 w-full max-w-2xl bg-darkmode border border-border sm:rounded-3xl rounded-t-3xl shadow-2xl max-h-[92vh] flex flex-col overflow-hidden animate-slideUp'>
-        
+
         {/* Mobile Swipe Bar Indicator */}
         <div className='sm:hidden flex justify-center pt-3 pb-1'>
           <div className='w-12 h-1.5 rounded-full bg-border' />
@@ -282,8 +282,8 @@ export default function SubscriptionCheckoutModal({
                     {completedData.paymentOption === 'TRIAL'
                       ? 'Essai Gratuit 14j Activé'
                       : completedData.paymentOption === 'FREE'
-                      ? 'Gratuit à vie (100% Offline)'
-                      : 'Paiement Validé'}
+                        ? 'Gratuit à vie (100% Offline)'
+                        : 'Paiement Validé'}
                   </span>
                 </div>
                 {completedData.trialEndsAt && (
@@ -343,17 +343,15 @@ export default function SubscriptionCheckoutModal({
                       <button
                         type='button'
                         onClick={() => onToggleAnnual(false)}
-                        className={`px-2.5 py-1 rounded-lg font-bold transition-all cursor-pointer ${
-                          !isAnnual ? 'bg-secondary text-[#061B14]' : 'text-lightblue hover:text-white'
-                        }`}>
+                        className={`px-2.5 py-1 rounded-lg font-bold transition-all cursor-pointer ${!isAnnual ? 'bg-secondary text-[#061B14]' : 'text-lightblue hover:text-white'
+                          }`}>
                         Mensuel
                       </button>
                       <button
                         type='button'
                         onClick={() => onToggleAnnual(true)}
-                        className={`px-2.5 py-1 rounded-lg font-bold transition-all flex items-center gap-1 cursor-pointer ${
-                          isAnnual ? 'bg-secondary text-[#061B14]' : 'text-lightblue hover:text-white'
-                        }`}>
+                        className={`px-2.5 py-1 rounded-lg font-bold transition-all flex items-center gap-1 cursor-pointer ${isAnnual ? 'bg-secondary text-[#061B14]' : 'text-lightblue hover:text-white'
+                          }`}>
                         <span>Annuel</span>
                         <span className='text-[9px] px-1 rounded bg-[#061B14] text-secondary font-black'>-17%</span>
                       </button>
@@ -374,11 +372,10 @@ export default function SubscriptionCheckoutModal({
                           if (plan.code === 'FREE') setPaymentOption('FREE')
                           else if (paymentOption === 'FREE') setPaymentOption('TRIAL')
                         }}
-                        className={`p-2.5 sm:p-3 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between ${
-                          isSelected
+                        className={`p-2.5 sm:p-3 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between ${isSelected
                             ? 'bg-secondary/20 border-secondary shadow-lg shadow-secondary/15 scale-[1.02]'
                             : 'bg-body-bg/60 border-border/80 hover:border-primary/50 text-lightblue'
-                        }`}>
+                          }`}>
                         <div className='flex items-center justify-between'>
                           <span className={`text-xs font-extrabold truncate ${isSelected ? 'text-white' : 'text-lightblue'}`}>
                             {plan.name.replace('ARIKE ', '')}
@@ -476,11 +473,10 @@ export default function SubscriptionCheckoutModal({
                   <div className='space-y-2.5'>
                     {/* Option A: Essai 14j */}
                     <label
-                      className={`flex items-start gap-3 p-3.5 rounded-2xl border cursor-pointer transition-all ${
-                        paymentOption === 'TRIAL'
+                      className={`flex items-start gap-3 p-3.5 rounded-2xl border cursor-pointer transition-all ${paymentOption === 'TRIAL'
                           ? 'bg-primary/20 border-primary shadow-md'
                           : 'bg-body-bg/60 border-border/70 hover:border-border'
-                      }`}>
+                        }`}>
                       <input
                         type='radio'
                         name='paymentOption'
@@ -503,11 +499,10 @@ export default function SubscriptionCheckoutModal({
 
                     {/* Option B: Mobile Money (FedaPay) */}
                     <label
-                      className={`flex items-start gap-3 p-3.5 rounded-2xl border cursor-pointer transition-all ${
-                        paymentOption === 'MOMO'
+                      className={`flex items-start gap-3 p-3.5 rounded-2xl border cursor-pointer transition-all ${paymentOption === 'MOMO'
                           ? 'bg-secondary/20 border-secondary shadow-md'
                           : 'bg-body-bg/60 border-border/70 hover:border-border'
-                      }`}>
+                        }`}>
                       <input
                         type='radio'
                         name='paymentOption'
@@ -534,11 +529,10 @@ export default function SubscriptionCheckoutModal({
                                 key={prov}
                                 type='button'
                                 onClick={() => setMomoProvider(prov)}
-                                className={`py-2 px-1 rounded-xl text-xs font-bold border transition-all text-center ${
-                                  momoProvider === prov
+                                className={`py-2 px-1 rounded-xl text-xs font-bold border transition-all text-center ${momoProvider === prov
                                     ? 'bg-secondary text-[#061B14] border-secondary'
                                     : 'bg-tablebg text-lightblue border-border hover:text-white'
-                                }`}>
+                                  }`}>
                                 {prov === 'CARD' ? 'Carte CB' : prov}
                               </button>
                             ))}
@@ -549,11 +543,10 @@ export default function SubscriptionCheckoutModal({
 
                     {/* Option C: WhatsApp Assisted */}
                     <label
-                      className={`flex items-start gap-3 p-3.5 rounded-2xl border cursor-pointer transition-all ${
-                        paymentOption === 'WHATSAPP'
+                      className={`flex items-start gap-3 p-3.5 rounded-2xl border cursor-pointer transition-all ${paymentOption === 'WHATSAPP'
                           ? 'bg-tablebg border-secondary/60'
                           : 'bg-body-bg/60 border-border/70 hover:border-border'
-                      }`}>
+                        }`}>
                       <input
                         type='radio'
                         name='paymentOption'

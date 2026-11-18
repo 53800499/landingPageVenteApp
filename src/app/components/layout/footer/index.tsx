@@ -42,7 +42,7 @@ const Footer = () => {
             </p>
             <div className='flex items-center gap-3'>
               <a
-                href='https://wa.me/229015380499'
+                href='https://wa.me/2290153800499'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='size-9 rounded-xl bg-darkmode border border-border flex items-center justify-center text-secondary hover:border-primary transition-colors'>
@@ -92,13 +92,13 @@ const Footer = () => {
             </p>
             <div className='space-y-3.5 text-sm text-lightblue'>
               <a
-                href='tel:+229015380499'
+                href='tel:+2290153800499'
                 className='hover:text-secondary flex items-center gap-2.5 transition-colors'>
                 <Icon icon='solar:phone-calling-bold' className='text-secondary text-lg shrink-0' />
                 <span>+229 01 53 80 49 9</span>
               </a>
               <a
-                href='https://wa.me/229015380499'
+                href='https://wa.me/2290153800499'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='hover:text-secondary flex items-center gap-2.5 transition-colors'>

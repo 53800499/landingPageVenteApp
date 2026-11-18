@@ -58,7 +58,7 @@ const ContactForm = () => {
       `📍 *Ville / Marché :* ${formData.location || 'Bénin'}\n\n` +
       `💬 *Message :* ${formData.message || subject}`
     )
-    window.open(`https://wa.me/229015380499?text=${waText}`, '_blank')
+    window.open(`https://wa.me/2290153800499?text=${waText}`, '_blank')
 
     setTimeout(() => {
       setLoader(false)
@@ -120,7 +120,7 @@ const ContactForm = () => {
               </p>
 
               <a
-                href='https://wa.me/229015380499?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20l%27application%20ARIKE'
+                href='https://wa.me/2290153800499?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20l%27application%20ARIKE'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='w-full inline-flex items-center justify-center gap-2.5 py-3.5 px-6 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm shadow-lg shadow-emerald-900/40 transition-all transform hover:-translate-y-0.5 cursor-pointer'>
@@ -143,7 +143,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <p className='text-xs text-white/60 uppercase font-semibold'>Appels & Urgences</p>
-                    <a href='tel:+229015380499' className='text-white font-bold hover:text-secondary transition-colors'>
+                    <a href='tel:+2290153800499' className='text-white font-bold hover:text-secondary transition-colors'>
                       +229 01 53 80 49 9
                     </a>
                   </div>
@@ -189,8 +189,8 @@ const ContactForm = () => {
                       type='button'
                       onClick={() => handleTagClick(tag.id)}
                       className={`text-xs font-bold px-3.5 py-2 rounded-xl border transition-all cursor-pointer ${selectedTag === tag.id
-                          ? 'bg-secondary text-darkmode border-secondary shadow-md font-extrabold'
-                          : 'bg-body-bg/80 border-border text-lightblue hover:text-white hover:border-primary/60'
+                        ? 'bg-secondary text-darkmode border-secondary shadow-md font-extrabold'
+                        : 'bg-body-bg/80 border-border text-lightblue hover:text-white hover:border-primary/60'
                         }`}>
                       {tag.label}
                     </button>
@@ -300,8 +300,8 @@ const ContactForm = () => {
                   type='submit'
                   disabled={!isFormValid || loader}
                   className={`w-full sm:w-auto inline-flex items-center justify-center gap-2.5 py-4 px-8 rounded-2xl font-bold text-sm sm:text-base transition-all duration-300 ${isFormValid && !loader
-                      ? 'bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white shadow-xl shadow-primary/30 cursor-pointer transform hover:-translate-y-0.5'
-                      : 'bg-border text-lightblue/60 cursor-not-allowed opacity-60'
+                    ? 'bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white shadow-xl shadow-primary/30 cursor-pointer transform hover:-translate-y-0.5'
+                    : 'bg-border text-lightblue/60 cursor-not-allowed opacity-60'
                     }`}>
                   <Icon icon='logos:whatsapp-icon' className='text-xl' />
                   <span>{loader ? 'Préparation...' : 'Envoyer ma Demande sur WhatsApp'}</span>

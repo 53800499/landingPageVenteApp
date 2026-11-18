@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Banner from "./components/home/hero";
 import Companies from "./components/home/companies";
+import SystemOverview from "./components/home/system-overview";
 import Work from "./components/home/work";
 import Table from "./components/home/table";
 import Modules from "./components/home/modules";
@@ -37,11 +38,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <Banner/>
+      <Banner />
       <Companies />
+      <SystemOverview />
       <Work />
       <Table />
-      <Modules />
+      {/* <Modules /> */}
       <Features />
       <Pricing />
       <Simple />

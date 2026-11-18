@@ -36,13 +36,6 @@ const Headerdata: HeaderItem[] = [
         icon: 'solar:star-fall-minimalistic-2-bold',
       },
       {
-        label: 'Tarifs & Abonnements',
-        href: '/#pricing-section',
-        description: 'Formules SaaS & Packs caisse matériel',
-        icon: 'solar:tag-price-bold',
-        badge: '0 F à vie',
-      },
-      {
         label: 'Comment ça marche',
         href: '/#work-section',
         description: 'Installation & prise en main en 3 étapes',
@@ -50,8 +43,6 @@ const Headerdata: HeaderItem[] = [
       },
     ],
   },
-  { label: 'Tarifs & Abonnements', href: '/#pricing-section' },
-  { label: 'Téléchargement', href: '/#download-section' },
   { label: 'FAQ', href: '/#faq-section' },
   { label: 'Contact', href: '/#contact' },
 ]
